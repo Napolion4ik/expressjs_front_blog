@@ -32,7 +32,7 @@ export function TagsPosts() {
 						title={obj.title}
 						imageUrl={
 							obj.imageUrl
-								? `http://localhost:3333${obj.imageUrl}`
+								? `${process.env.REACT_APP_API_URL}${obj.imageUrl}`
 								: ""
 						}
 						user={obj.user}
